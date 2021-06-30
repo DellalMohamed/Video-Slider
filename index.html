@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <video  id="slider" autoplay muted loop>
+            <source type="video/mp4" src="./img/video (1).mp4">
+        </video>
+        <ul class="navigation">
+            <li onclick="videoUrl('./img/video.mp4')"><img src="./img/video.mp4"></li>
+            <li onclick="videoUrl('./img/Pexels Videos 1779202.mp4')" ><img src="./img/Pexels Videos 1779202.mp4"></li>
+            <li  onclick="videoUrl('./img/Pexels Videos 2519660.mp4')"><img src="./img/Pexels Videos 2519660.mp4"></li>
+            <li  onclick="videoUrl('./img/video (1).mp4')"><img src="./img/video (1).mp4"></li>
+
+        </ul>
+    </section>
+    <script>
+        function videoUrl (hm){
+            document.getElementById('slider').src = hm
+        }
+    </script>
+</body>
+</html>
